@@ -1,0 +1,18 @@
+.navy{
+    background-color: #2C3E50;
+}
+
+.navbar ul li a{
+    font-size: 18px;
+    color:#fff;
+  font-weight: bold;
+}
+.navSize{
+    font-size: 30px;
+    color:#fff;
+    font-weight: bold;
+
+}
+.linked{
+    background-color: #1ABC9C;
+}

@@ -1,0 +1,40 @@
+.container-fluid{
+    background-color: #1ABC9C;
+}
+.row{
+    margin-top:70px ;
+    padding-top: 30px;
+}
+.row h1{
+    color:#fff;
+    position:relative
+}
+.makeAfter{
+    position:relative;
+
+}
+.makeAfter::after{
+    content:'';
+    width:90px;
+    height:3px;
+    background-color:#fff;
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+    
+}
+.makeAfter::before{
+    content:'';
+    width:90px;
+    height:3px;
+    background-color:#fff;
+    position: absolute;
+    right: 40%;
+    bottom: 0;
+    
+}
+.max-size{
+    max-width: 500px;
+    font-size: 17px;
+    text-align: left;
+}

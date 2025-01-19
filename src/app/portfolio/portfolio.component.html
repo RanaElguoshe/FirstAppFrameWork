@@ -1,0 +1,52 @@
+<div class="container my-5">
+    <div class="row gy-5 text-center">
+        <h1>PORTFOLIO SECTION</h1>
+        <!-- <div class="col-md-4 parentLayer rounded">
+            <img [src]="imgSrc[0]" class="imgStyle rounded w-100" alt="img1">
+            <div class="layer rounded d-flex justify-content-center align-items-center">
+                <i class="plus fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <div class="col-md-4 parentLayer rounded">
+            <img src="/img2.png" class="imgStyle rounded w-100" alt="img1">
+            <div class="layer rounded d-flex justify-content-center align-items-center">
+                <i class="plus fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <div class="col-md-4 parentLayer rounded">
+            <img src="/img3.png" class="imgStyle rounded w-100" alt="img1">
+            <div class="layer rounded d-flex justify-content-center align-items-center">
+                <i class="plus fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <div class="col-md-4 parentLayer rounded">
+            <img src="/img1.png" class="imgStyle rounded w-100" alt="img1">
+            <div class="layer rounded d-flex justify-content-center align-items-center">
+                <i class="plus fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <div class="col-md-4 parentLayer rounded">
+            <img src="/img2.png" class="imgStyle rounded w-100" alt="img1">
+            <div class="layer rounded d-flex justify-content-center align-items-center">
+                <i class="plus fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <div class="col-md-4 parentLayer rounded">
+            <img src="/img3.png" class="imgStyle rounded w-100" alt="img1">
+            <div class="layer rounded d-flex justify-content-center align-items-center">
+                <i class="plus fa-solid fa-plus"></i>
+            </div>
+        </div> -->
+@for(img of imgSrc;track $index){
+    <div class="col-md-4 parentLayer rounded"(click)="modelImg=img; isHide=false">
+        <img [src]="img"  class="imgStyle rounded w-100" alt="img1">
+        <div class="layer rounded d-flex justify-content-center align-items-center">
+            <i class="plus fa-solid fa-plus"></i>
+        </div>
+    </div>
+}
+    <div id="conLayer" [class.d-none]="isHide" (click)="modelHide($event.target,imgRef)">
+        <img #imgRef [src]="modelImg"class="w-100" alt="imges">
+    </div>
+</div>
+

@@ -1,0 +1,35 @@
+.row{
+    margin-top:70px ;
+    padding-top: 30px;
+}
+.inSection{
+    background-color:beige;
+    color:#000;
+    position: absolute;
+    left:400px;
+    height:  fit-content;
+    width: fit-content;
+    padding:30px;
+    top:30px;
+
+}
+.inRel{
+ margin: auto;
+ width: 50%;
+ color:white;
+}
+
+.btnStyle{
+    width:120px;
+    height:40px;
+    border-radius: 50%;
+}
+.coloring{
+    color:#1ABC9C;
+}
+.btn-info {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #1ABC9C;
+    --bs-btn-border-color: #1ABC9C;
+ 
+}

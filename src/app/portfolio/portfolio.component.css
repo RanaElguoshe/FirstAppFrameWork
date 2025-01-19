@@ -1,0 +1,43 @@
+.row{
+    margin-top:70px ;
+    padding-top: 30px;
+}
+
+.layer{
+    background-color:rgba(41,177,151,.8);
+    width: 94%;
+    height: 100%;
+}
+.parentLayer{
+    position: relative;
+}
+.layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 12px;
+    right: 0px;
+opacity: 0;   
+transition: all .7s; 
+}
+.plus{
+    font-size: 100px;
+    color: #fff;
+
+}
+.parentLayer:hover .layer{
+    opacity: 1;
+
+}
+#conLayer{
+    position: absolute;
+    top: 270px;
+    bottom: 20;
+    left: 300px;
+    right: 20px;
+    width: 50%;
+    height: 50%;
+}
+.container{
+    position: relative;
+}
